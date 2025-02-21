@@ -1,0 +1,16 @@
+# environment
+.venv
+
+# keys
+*.key
+
+# documents
+*.pdf
+
+# python
+f1_llm.egg-info
+**/__pycache__/
+
+# milvus
+volumes/
+milvus_utils/
