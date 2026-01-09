@@ -1,5 +1,9 @@
 # f1-reg-rag
 
+![app-logo](thumbnail.png)
+
+Set-up instructions:
+
 1. Set up local Milvus database and Ollama in Docker container
 2. Run `src/utils/setup_local_milvus.py` to add collection and vector size (uses DeepSeek-R1 embedding)
 3. Set env `OPENAI_API_KEY` if using an OpenAI LLM when running the application
