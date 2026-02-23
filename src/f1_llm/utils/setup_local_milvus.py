@@ -8,8 +8,8 @@ connections.connect(
     port="19530"
 )
 
-# used with deepseek ollama
-dim = 3584
+# used for nomic-embed-text
+dim = 768
 collection_name = "test_collection"
 
 fields = [
