@@ -2,6 +2,8 @@
 
 ![app-logo](thumbnail.png)
 
+## Local RAG development
+
 This project is a RAG-based ideation tool for Formula 1 technical regulations. It allows users to ask questions and critically evaluate potential design decisions, focusing on removing false positives and hallucinations. It also lowers the barrier to entry for fans to act as designers – are you the next Adrian Newey?
 
 Set-up instructions:
@@ -21,6 +23,14 @@ vllm serve neuralmagic/DeepSeek-R1-Distill-Qwen-32B-quantized.w4a16 \
     - gpt-4o-mini
     - neuralmagic/DeepSeek-R1-Distill-Qwen-32B-quantized.w4a16
 6. Additionally, you can add `--debug` to log all retrieved RAG context to terminal and `--fresh` to drop existing collection and re-embed regulation documents from scratch.
+
+## Blender integration
+
+There is an additional `--blender_mcp` flag, which allows you to use Blender MCP to execute Python code in Blender. This is useful for visualizing F1 components based on the regulations.
+
+1. Start the standalone blender server with `blender -b -P src/f1_llm/utils/blender_worker.py`
+- This registers the addon class and starts the socket server on port 9876 (addon from [Blender MCP](https://github.com/ahujasid/blender-mcp/tree/main))
+
 
 ## System requirements
 
